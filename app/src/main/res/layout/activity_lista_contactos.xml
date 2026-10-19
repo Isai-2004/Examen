@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla 2: Lista de contactos -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAtras"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:strokeColor="@color/black" />
+
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_input"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="6dp"
+        android:hint="Buscar"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingHorizontal="12dp" />
+
+    <ListView
+        android:id="@+id/lstContactos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_marco"
+        android:choiceMode="singleChoice"
+        android:divider="@color/azul_claro"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/lblVacio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="No hay contactos guardados"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompartir"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:text="Compartir Contacto"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerImagen"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:text="Ver Imagen"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminar"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:text="Eliminar Contacto"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnActualizar"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:text="Actualizar Contacto"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

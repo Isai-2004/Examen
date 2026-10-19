@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde">#FF009933</color>
+    <color name="verde_llamar">#FF3DAA66</color>
+    <color name="verde_nota">#FFB8D8A8</color>
+    <color name="azul">#FF2F7BE0</color>
+    <color name="azul_oscuro">#FF1E5BB0</color>
+    <color name="azul_claro">#FFD6E4F8</color>
+    <color name="gris">#FF9E9E9E</color>
+    <color name="dorado">#FFC9A227</color>
+</resources>
